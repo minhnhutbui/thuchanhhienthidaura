@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="showMessage">Click me !</button>
+    <div id="messageDiv"></div>
+    <button onclick="showMessage()">Click me!</button>
     <script>
         function showMessage() {
-            alert("hello");
+            document.getElementById("messageDiv").innerHTML = "hello"
         }
     </script>
 </body>
